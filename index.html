@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,13 @@
     <link rel="stylesheet" href="estilos.css">
 
 </head>
+
 <body>
 
     <h1 style="text-align:center;">Generador de Paleta de Colores</h1>
     <div class="input-container">
-        <div id="dropArea">Arrastra y suelta una imagen directamente de google  o haz clic para seleccionar un archivo</div>
+        <div id="dropArea">Arrastra y suelta una imagen directamente de google o haz clic para seleccionar un archivo
+        </div>
         <input type="file" id="imageUpload" accept="image/*" style="display: none;">
     </div>
     <div class="input-container link">
@@ -26,14 +29,14 @@
     </div>
     <h2 style="text-align:center; ">Componentes y combinacion</h2>
     <div class="componentes">
-        
+
         <div id="navbar">
             <div class="logo">Logo</div>
             <div class="menu">
                 <a href="#">Inicio</a>
                 <a href="#">Servicios</a>
                 <a href="#">Contacto</a>
-                
+
             </div>
             <div class="search-container">
                 <input type="text" placeholder="Buscar...">
@@ -64,5 +67,15 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
     <script src="script.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YYYFCRDBF0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-YYYFCRDBF0');
+    </script>
 </body>
+
 </html>
