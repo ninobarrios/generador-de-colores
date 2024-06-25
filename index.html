@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Paleta de Colores</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+<body>
+
+    <h1 style="text-align:center;">Generador de Paleta de Colores</h1>
+    <div class="input-container">
+        <div id="dropArea">Arrastra y suelta una imagen directamente de google  o haz clic para seleccionar un archivo</div>
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+    </div>
+    <div class="input-container link">
+        <input type="text" id="urlInput" placeholder="Introduce el URL de la imagen">
+        <button id="loadUrlButton">Cargar URL</button>
+    </div>
+    <div id="colorPalette"></div>
+    <div style="text-align:center; margin-top: 50px;">
+        <button class="btnsave" id="copyButton">Copiar códigos de colores</button>
+        <button class="btnsave" id="guardarButton">Guardar Foto y Paleta de Colores</button>
+
+    </div>
+    <h2 style="text-align:center; ">Componentes y combinacion</h2>
+    <div class="componentes">
+        
+        <div id="navbar">
+            <div class="logo">Logo</div>
+            <div class="menu">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Contacto</a>
+                
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Buscar...">
+                <button type="button">Buscar</button>
+            </div>
+        </div>
+        <div class="card" id="card">
+            <div class="card-header" id="cardHeader">
+                <img src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+                <h2 id="cardTitle">Título de la Card</h2>
+            </div>
+            <div class="card-body">
+                <p>Descripción corta o detalles del contenido.</p>
+            </div>
+            <div class="card-footer">
+                <a href="#" class="button">Ver más</a>
+            </div>
+        </div>
+        <div style="text-align:center;">
+            <button class="btnsave" id="descartarButton">Descartar Seleccionados</button>
+        </div>
+        <div class="containertemas">
+            <div class="coloresguardados" id="coloresGuardados">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.2/color-thief.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

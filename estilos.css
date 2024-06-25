@@ -1,0 +1,362 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 100%;
+}
+
+#navbar a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+#navbar a:hover {
+    opacity: 0.8;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type=text] {
+    padding: 6px;
+    margin-right: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 6px 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background: #ccc;
+}
+
+#colorPalette {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.colorBox {
+    width: 50px;
+    height: 100px;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: row;
+    margin: 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#copyButton {
+
+    cursor: pointer;
+}
+
+.input-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#urlInput {
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    background-color: #f3efef;
+}
+
+#loadUrlButton {
+    padding: 6px 10px;
+    font-size: 17px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#loadUrlButton:hover {
+    background-color: #ccc;
+}
+
+#dropArea {
+    padding: 20px;
+    width: 50%;
+    height: auto;
+    margin: 20px 25%;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #949090;
+}
+
+#dropArea.hover {
+    background-color: #f0f0f0;
+}
+
+#dropArea img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.link {
+    width: 50%;
+    margin: 30px 25%;
+}
+
+.componentes {
+    width: 80%;
+    margin: 50px 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.componentes h3 {
+    text-align: center;
+}
+
+
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.card-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+    object-fit: cover;
+}
+
+.card-header h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+.card-body {
+    padding: 16px;
+    color: #666;
+}
+
+.card-footer {
+    padding: 12px 16px;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.tituloscombinacion {
+    height: 400px;
+    width: 700px;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.inputbtn {
+
+    background-color: #ece7e7;
+    margin: 20px;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.containertemas {
+    width: 100vw;
+    height: auto;
+    background-color: #f0f3f5;
+
+}
+
+.coloresguardados {
+    width: 70%;
+    margin: 0px 15%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.contenidoguardado {
+    height: 450px;
+    width: 300px;
+    background-color: #ece6e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 15px;
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    box-shadow: 11px 15px 20px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.contenidoguardado img {
+    width: 100%;
+    height: 75% !important;
+    object-fit: cover;
+}
+
+
+
+
+
+
+.checkbox-container {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    transform: scale(1.5);
+}
+
+
+.btnsave {
+    border: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+
+.btnsave:hover {
+    background-color: #333;
+    color: white;
+}
+
+
+
+
+
+
+@media (max-width: 600px) {
+    #navbarpxpx {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
